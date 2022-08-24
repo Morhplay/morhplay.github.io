@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.mainbg {
+    height: 100%;
+    min-height: 100vh;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whitebg {
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 1000px;
+}
+
+p {
+    width: 250px;
+    text-align: center;
+}
+
+.social {
+    width: 40px;
+    margin: 5px;
+}
+
