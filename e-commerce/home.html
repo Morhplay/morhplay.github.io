@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="e-commer.css">
+
+</head>
+<body>
+
+	<div class="navbar">
+		<a href="home.html" class="active">HOME</a>
+		<a href="accessories.html" class="active">ACCESSORIES</a>
+		<a href="contact.html" class="active">CONTACT</a>
+	</div> <br>
+	<br>
+	<br>
+
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 4</div>
+		  <img src="e 1.png" style="width:100%">
+		  <div class="text">SHOPPING MADE EASY</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 4</div>
+		  <img src="e 2.png" style="width:100%">
+		  <div class="text">SHOPPING MADE EASY</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 4</div>
+		  <img src="e 3.jfif" style="width:100%">
+		  <div class="text">SHOPPING MADE EASY</div>
+		</div>
+
+
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 4</div>
+		  <img src="e 4.jfif" style="width:100%">
+		  <div class="text">SHOPPING MADE EASY</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		</div>
+		<br> 
+		<br> 
+
+
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
